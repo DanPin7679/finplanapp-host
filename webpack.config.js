@@ -43,9 +43,12 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "starter",
+      name: "host",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        Simulator:
+          "simulator@https://finplanaap-simulator.vercel.app/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
