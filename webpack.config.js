@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8080/"
-        : "https://finplanaap-simulator.vercel.app/",
+        : "https://finplanapp-host.vercel.app/",
   },
 
   resolve: {
