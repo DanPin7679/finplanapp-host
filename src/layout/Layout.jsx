@@ -1,7 +1,6 @@
 import React from "react";
-import Simulator from "Simulator/Simulator"
 import {useDispatch, useSelector} from 'react-redux'
-import Button from '@mui/material/Button'
+import MiniDrawer from "./drawer/Drawer";
 
 import { uiAction } from "../store/ui-slice";
 
@@ -14,12 +13,9 @@ function Layout() {
       };
 
   return (
-    <div>
-        {open ? "Vrai":"False"}
-        <Button variant="outlined" onClick={handleDrawerClose}>Click</Button>
-      <h1>Layout from Host</h1>
-      <Simulator />
-    </div>
+
+      <MiniDrawer/>
+
   );
 }
 

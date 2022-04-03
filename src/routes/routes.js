@@ -1,5 +1,7 @@
 import React from "react";
-import Icon from "@mui/material/Icon";
+
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 import Simulator from "Simulator/Simulator";
 import Dashboard from "../Dashboard";
 
@@ -8,7 +10,7 @@ const routes = [
     type: "collapse",
     name: "Dashboard",
     key: "dashboard",
-    icon: <Icon fontSize="small">dashboard</Icon>,
+    icon: <InboxIcon />,
     route: "/dashboard",
     component: <Dashboard />,
   },
@@ -16,7 +18,7 @@ const routes = [
     type: "collapse",
     name: "Tools",
     key: "tools",
-    icon: <Icon fontSize="small">table_view</Icon>,
+    icon: <MailIcon />,
     route: "/tools",
     component: <Simulator />,
   },
